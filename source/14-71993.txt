@@ -1,0 +1,666 @@
+const imgImg = "https://www.figma.com/api/mcp/asset/3a541dca-1df2-4f27-8841-0e28ac25f9c7.png";
+const imgAb6AXuCgdE1XyXkD0T1AeUkkV4TUunV7N7SDTosezg3LXVuPMnzL5Xlvv4EcGJxTtz01L63L35NMT26KQol4DGMpR7A7QocvuGsb0JzhohzKsTzhyApzBImLwBViNzXy1QHyxOhRKhFx0Q9Q6XrJzMsNq1ZH3ZzsZgpMa7NytOnuPwINglzWupTNpl4QdZPbmhrIhjt2XEqdYAjjvj4Avhljww1U1TshUKvXkN5TPSrTbFNy8Q = "https://www.figma.com/api/mcp/asset/46dba78b-4220-4f83-9372-6567b4084f1a.png";
+const imgAb6AXuAmsIVtRzPvxMmTalM4VipFxb8UobiWPss8DtGHwNqfHpSkRDuTfvrHFqSPhZjtxEoJSa7S77PZwyvvkWoP9HBa9IcEcTeukqGvQbGrOvzJlmlmwVfY1J9Jue7YCh4Ewk1Ieikw0W8VRohb9SbCyPmuxLHwmlsp50M7XzNd2NmIKgwDLHhsfyuF3Itqq0Scqel42SiZ199OH7S3YjdeEYtzh328Km2Mj88OzMlNuUzg = "https://www.figma.com/api/mcp/asset/8f3cbece-39ce-4dfd-81a3-e5a193d1fafa.png";
+const imgAb6AXuCgdE1XyXkD0T1AeUkkV4TUunV7N7SDTosezg3LXVuPMnzL5Xlvv4EcGJxTtz01L63L35NMT26KQol4DGMpR7A7QocvuGsb0JzhohzKsTzhyApzBImLwBViNzXy1QHyxOhRKhFx0Q9Q6XrJzMsNq1ZH3ZzsZgpMa7NytOnuPwINglzWupTNpl4QdZPbmhrIhjt2XEqdYAjjvj4Avhljww1U1TshUKvXkN5TPSrTbFNy8Q1 = "https://www.figma.com/api/mcp/asset/0c08c8d2-cd53-4f0e-af7e-a2b786844400.png";
+const imgVector = "https://www.figma.com/api/mcp/asset/a2b14f04-c381-426b-a663-88456febde79.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/7e29049e-3a0b-472d-90b2-45483d21da44.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/4515e8f5-9278-477d-b5e3-012fe7750dd6.svg";
+const imgGroup = "https://www.figma.com/api/mcp/asset/30666de9-8b8b-4587-894e-1b3f8f3e5f08.svg";
+const imgGroup1 = "https://www.figma.com/api/mcp/asset/25de8afd-e38e-4653-8014-0325735a6a40.svg";
+const imgVector3 = "https://www.figma.com/api/mcp/asset/878c1b61-e998-4bf4-aaac-e8ab5c7768f7.svg";
+const imgIconDetails = "https://www.figma.com/api/mcp/asset/95cda723-b5d6-4b2c-9c99-0f5eb2811210.svg";
+const imgIconHelpCircle = "https://www.figma.com/api/mcp/asset/f6662b19-d3ff-4300-8a11-0bed5461d1f0.svg";
+const imgSemiIconsChevronLeft = "https://www.figma.com/api/mcp/asset/bc3cb058-9b3e-4dd9-bc45-03a45eb3dbb3.svg";
+const imgSemiIconsEdit = "https://www.figma.com/api/mcp/asset/f7dffbb5-42ff-4cc4-a9d1-2bbcefeea833.svg";
+const imgSemiIconsSidebar = "https://www.figma.com/api/mcp/asset/e111cbe5-3b4a-463c-8071-650ef094f597.svg";
+const imgRectangle3 = "https://www.figma.com/api/mcp/asset/8d1b7a92-0694-43a3-9500-1837d47096cf.svg";
+const imgEllipse8925 = "https://www.figma.com/api/mcp/asset/e59d1ef1-5fb8-49df-a4ee-8eb51a2612d3.svg";
+const imgEllipse8923 = "https://www.figma.com/api/mcp/asset/81ea14ca-c553-439f-bb02-7bbbe7a643d1.svg";
+const imgEllipse8919 = "https://www.figma.com/api/mcp/asset/86d90938-a70e-45a5-ba05-26a099d332bb.svg";
+const imgEllipse8922 = "https://www.figma.com/api/mcp/asset/2827703e-3ebc-46e2-9cc6-fff7e34cda0d.svg";
+const imgEllipse8926 = "https://www.figma.com/api/mcp/asset/a3ffe5ae-e50b-45a3-8f89-9286b3e0acbe.svg";
+const imgEllipse8920 = "https://www.figma.com/api/mcp/asset/bf2b407e-0f74-46a9-8b12-62c4125caf39.svg";
+const imgEllipse8921 = "https://www.figma.com/api/mcp/asset/fda11c51-bd08-4ac7-8fde-1ae7d46fbc2e.svg";
+const imgEllipse8924 = "https://www.figma.com/api/mcp/asset/d12ae0f7-d2ef-49c1-a13f-b6bef29f3b36.svg";
+const imgEllipse8901 = "https://www.figma.com/api/mcp/asset/1fab890f-cfa0-4f6c-a8ff-7281ab5a05d5.svg";
+const imgEllipse8902 = "https://www.figma.com/api/mcp/asset/ca1bbdbf-474e-47ed-9ad5-78489a1d01f7.svg";
+const imgEllipse8903 = "https://www.figma.com/api/mcp/asset/4413384b-f537-4f1a-a058-87e0d061da7c.svg";
+const imgEllipse8904 = "https://www.figma.com/api/mcp/asset/1a22f2b2-55cf-4bb6-b39a-460eaac294df.svg";
+const imgVector4 = "https://www.figma.com/api/mcp/asset/fa342b46-3042-4812-93f0-fdb5580f90bd.svg";
+const imgVector5 = "https://www.figma.com/api/mcp/asset/41ea3041-5fea-4028-9739-abf55d3e8191.svg";
+const imgVector6 = "https://www.figma.com/api/mcp/asset/91817135-ecd7-43ea-99ed-d708c782bf0e.svg";
+const imgVector7 = "https://www.figma.com/api/mcp/asset/6ca9cf00-2123-4ab0-9c38-119aa87b9320.svg";
+const imgGroup2 = "https://www.figma.com/api/mcp/asset/d17abfd8-2768-4276-bdff-2c9b4c3e6cef.svg";
+const imgVector8 = "https://www.figma.com/api/mcp/asset/7113c05b-068e-4f9f-b3cb-f8cddb7c4899.svg";
+const imgVector9 = "https://www.figma.com/api/mcp/asset/2063a676-243a-4a31-81c4-bf123984b05d.svg";
+const imgIcon = "https://www.figma.com/api/mcp/asset/878d94c6-7eef-4a6b-8ee8-f24cce9296fd.svg";
+const imgContainer = "https://www.figma.com/api/mcp/asset/cd52e6ea-4e62-4a97-ba87-51f5ab282aef.svg";
+const imgSvg = "https://www.figma.com/api/mcp/asset/ad56fefb-9c11-4286-ac83-ea1b3f865e9c.svg";
+const imgSvg1 = "https://www.figma.com/api/mcp/asset/965555fa-901e-4f13-9544-fc692afadbde.svg";
+const imgSvg2 = "https://www.figma.com/api/mcp/asset/fa0cc1b1-9ca5-472e-8cb8-e242e0017d77.svg";
+const imgContainer1 = "https://www.figma.com/api/mcp/asset/2057ee60-e53f-4c60-80ff-81de2029fe8e.svg";
+
+type AvatarProps = {
+  className?: string;
+  color?: "blue";
+  shape?: "circle";
+  size?: "small";
+  src?: "true";
+};
+
+function Avatar({ className, color = "blue", shape = "circle", size = "small", src = "true" }: AvatarProps) {
+  return (
+    <div className={className || "bg-[rgba(0,0,0,0)] content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] size-[32px]"} data-node-id="6:43413">
+      <div className="flex-[1_0_0] h-full min-w-px relative rounded-[9999px]" data-node-id="6:43414" data-name="IMG">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[9999px]">
+          <div className="absolute bg-[rgba(0,0,0,0)] inset-0 rounded-[9999px]" />
+          <img alt="" className="absolute max-w-none object-cover rounded-[9999px] size-full" src={imgImg} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Empty() {
+  return (
+    <div className="bg-[var(--background\/整体背景色-\@color-bg-1,white)] content-stretch flex flex-col items-start relative size-full" data-node-id="14:71993" data-name="任务页-empty">
+      <div className="bg-[var(--usage\/nav\/--semi-color-nav-bg,white)] border-[var(--usage\/border\/--semi-color-border,rgba(28,31,35,0.08))] border-b border-solid content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="14:71994" data-name="navigation">
+        <div className="bg-[var(--usage\/nav\/--semi-color-nav-bg,white)] border-[var(--usage\/border\/--semi-color-border,rgba(28,31,35,0.08))] border-b border-solid content-stretch flex items-center justify-between px-[24px] py-[10px] relative shrink-0 w-full" data-node-id="14:71995" data-name="navContent">
+          <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="14:71996" data-name="brand area">
+            <div className="overflow-clip relative shrink-0 size-[32px]" data-node-id="14:71997" data-name="01-camera-refined 2">
+              <div className="absolute inset-[33.6%_15.63%_28.84%_60.62%]" data-node-id="14:71998" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+              </div>
+              <div className="absolute inset-[28.13%_31.88%_26.88%_15.63%]" data-node-id="14:71999" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+              </div>
+              <div className="absolute inset-[29.13%_32.87%_27.87%_16.63%]" data-node-id="14:72000" data-name="Vector">
+                <div className="absolute inset-[-2.91%_-2.48%]">
+                  <img alt="" className="block max-w-none size-full" src={imgVector2} />
+                </div>
+              </div>
+              <div className="absolute contents inset-[28.13%_31.88%_26.88%_15.63%]" data-node-id="14:72001" data-name="Clip path group">
+                <div className="absolute inset-[8.13%_19.38%_14.38%_-6.88%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[7.2px_6.4px] mask-size-[16.8px_14.4px]" data-node-id="14:72004" style={{ maskImage: `url("${imgGroup}")` }} data-name="Group">
+                  <div className="absolute inset-[-24.19%_-21.43%]">
+                    <img alt="" className="block max-w-none size-full" src={imgGroup1} />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-[45.63%_64.37%_41.87%_30.63%]" data-node-id="14:72007" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+              </div>
+              <div className="absolute inset-[45.63%_49.37%_41.87%_45.63%]" data-node-id="14:72008" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[12px] h-[21px] items-center justify-center relative shrink-0" data-node-id="14:72009" data-name="textGroup">
+              <p className="[word-break:break-word] font-['TikTok_Display:Bold'] leading-[1.3] not-italic relative shrink-0 text-[#1c1f23] text-[16px] tracking-[0.28px] whitespace-nowrap" data-node-id="14:72010">
+                TikTok Shop Video Studio
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center justify-end overflow-clip relative shrink-0" data-node-id="14:72020" data-name="right">
+            <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="14:72025" data-name="btn group">
+              <div className="content-stretch flex gap-[12px] items-center justify-center relative shrink-0" data-node-id="14:72040" data-name="general functions">
+                <div className="relative shrink-0 size-[16px]" data-node-id="14:72044" data-name="icon-details">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDetails} />
+                </div>
+                <div className="relative shrink-0 size-[16px]" data-node-id="14:72045" data-name="icon-help_circle">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHelpCircle} />
+                </div>
+              </div>
+            </div>
+            <Avatar className="bg-[rgba(0,0,0,0)] content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] shrink-0 size-[32px]" />
+          </div>
+        </div>
+      </div>
+      <div className="border-[rgba(28,30,35,0.08)] border-b border-solid content-stretch flex items-center relative shrink-0 w-full" data-node-id="25:81487" data-name="left">
+        <div className="content-stretch flex items-start pl-[10px] pr-[8px] py-[10px] relative shrink-0" data-node-id="25:81488" data-name="application">
+          <div className="content-stretch flex h-[32px] items-center justify-center p-[8px] relative rounded-[3px] shrink-0" data-node-id="25:81489" data-name="Button_Borderless">
+            <div className="relative shrink-0 size-[16px]" data-node-id="I25:81489;2734:43463" data-name="semi-icons-plus">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSemiIconsChevronLeft} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[4px] items-start justify-center pb-[12px] pt-[8px] relative shrink-0" data-node-id="25:81490">
+          <div className="content-stretch flex items-center relative shrink-0" data-node-id="25:81491">
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[16px] text-[color:var(--usage\/text\/--semi-color-text-0,#1c1e23)] tracking-[-0.32px] whitespace-nowrap" data-node-id="25:81492">
+              Summer Sunscreen Cushion
+            </p>
+            <div className="content-stretch flex h-[24px] items-center justify-center px-[5px] py-[8px] relative rounded-[var(----semi-border-radius-small,8px)] shrink-0" data-node-id="25:81493" data-name="Button_Borderless">
+              <div className="relative shrink-0 size-[14px]" data-node-id="I25:81493;2734:43469" data-name="semi-icons-plus">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSemiIconsEdit} />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="25:81494">
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] whitespace-nowrap" data-node-id="25:81506">
+              Created time: 2026-09-10 14:22:24
+            </p>
+            <div className="flex flex-row items-center self-stretch" data-node-id="25:81507">
+              <div className="content-stretch flex h-full items-center py-[2px] relative shrink-0 w-px">
+                <div className="bg-[var(--usage\/border\/--semi-color-border,rgba(28,30,35,0.08))] flex-[1_0_0] h-full min-w-px relative" data-node-id="25:81508" />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[0] not-italic relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] whitespace-nowrap" data-node-id="25:81509">
+              <span className="leading-[16px]">{`Source Video: `}</span>
+              <span className="leading-[16px] text-[#0077fa]">Sunscreen_cushion.mp4</span>
+              <span className="leading-[16px] text-[rgba(28,30,35,0.6)]">{` (01:24)`}</span>
+            </p>
+            <div className="flex flex-row items-center self-stretch" data-node-id="25:81510">
+              <div className="content-stretch flex h-full items-center py-[2px] relative shrink-0 w-px">
+                <div className="bg-[var(--usage\/border\/--semi-color-border,rgba(28,30,35,0.08))] flex-[1_0_0] h-full min-w-px relative" data-node-id="25:81511" />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] whitespace-nowrap" data-node-id="25:81512">
+              Update time: 2026-09-11 17:07:47
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex h-[784px] items-start relative shrink-0 w-full" data-node-id="14:72081">
+        <div className="bg-[#f5f6f8] border-[var(--usage\/border\/--semi-color-border,rgba(28,30,35,0.08))] border-r border-solid content-stretch flex flex-col gap-[12px] h-full items-start overflow-clip pb-[12px] pt-[16px] px-[12px] relative shrink-0" data-node-id="14:73212">
+          <div className="content-stretch flex h-[32px] items-center justify-center p-[8px] relative rounded-[var(----semi-border-radius-medium,6px)] shrink-0" data-node-id="14:73213" data-name="Button_Borderless">
+            <div className="relative shrink-0 size-[16px]" data-node-id="I14:73213;173:2597" data-name="semi-icons-plus_circle">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSemiIconsSidebar} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[12px] items-center min-h-px relative" data-node-id="14:73214">
+            <div className="bg-[var(--usage\/bg\/--semi-color-bg-0,white)] border border-[var(--usage\/border\/--semi-color-border,rgba(28,30,35,0.08))] border-solid content-stretch flex items-start overflow-clip relative rounded-[8px] shrink-0 w-[32px]" data-node-id="14:73215" data-name="Version Tab">
+              <div className="content-stretch flex flex-[1_0_0] items-start min-w-px pl-[8px] pr-[12px] py-[8px] relative" data-node-id="14:73217">
+                <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--主题色,#0077fa)] whitespace-nowrap" data-node-id="14:73218">
+                  V1
+                </p>
+              </div>
+            </div>
+            <div className="bg-[var(--usage\/bg\/--semi-color-bg-0,white)] border border-[var(--usage\/border\/--semi-color-border,rgba(28,30,35,0.08))] border-solid content-stretch flex items-start overflow-clip relative rounded-[8px] shrink-0 w-[32px]" data-node-id="14:73219" data-name="Version Tab">
+              <div className="content-stretch flex items-start pl-[8px] pr-[12px] py-[8px] relative shrink-0 w-[192px]" data-node-id="14:73221">
+                <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[20px] not-italic relative shrink-0 text-[#1c1f23] text-[14px] whitespace-nowrap" data-node-id="14:73222">
+                  V2
+                </p>
+              </div>
+            </div>
+            <div className="bg-[var(--usage\/bg\/--semi-color-bg-0,white)] border border-[var(--usage\/border\/--semi-color-border,rgba(28,30,35,0.08))] border-solid content-stretch flex items-start overflow-clip relative rounded-[8px] shrink-0 w-[32px]" data-node-id="14:73223" data-name="Version Tab">
+              <div className="content-stretch flex flex-[1_0_0] items-start min-w-px pl-[8px] pr-[12px] py-[8px] relative" data-node-id="14:73225">
+                <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[20px] not-italic relative shrink-0 text-[#1c1f23] text-[14px] whitespace-nowrap" data-node-id="14:73226">
+                  V3
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] h-full items-start min-w-px p-[16px] relative" data-node-id="14:72144">
+          <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip px-[16px] py-[20px] relative rounded-[16px] shrink-0 w-full" data-node-id="14:72183">
+            <div className="absolute bg-white border border-[#e8ecf2] border-solid inset-[0_0_-506.45%_0] overflow-clip rounded-[16px]" data-node-id="14:72184" data-name="浮层背景">
+              <div className="absolute contents left-[-1px] right-[calc(12.13%-0.76px)] top-[-1px]" data-node-id="14:72185" data-name="BG">
+                <div className="absolute h-[704px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[1352px_704px] opacity-90 right-0 top-0" data-node-id="14:72187" style={{ backgroundImage: "linear-gradient(160.1749935321605deg, rgb(222, 241, 255) 0.93231%, rgb(230, 241, 255) 9.9738%, rgb(227, 226, 255) 29.747%, rgb(238, 238, 255) 41.933%, rgb(226, 241, 255) 50.957%, rgb(232, 251, 255) 61.429%)", maskImage: `url("${imgRectangle3}")` }} />
+                <div className="absolute flex h-[296.818px] items-center justify-center left-[44.02%] right-[18.88%] top-[-184.3px]" data-node-id="14:72188" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(21.1325cqw,78.8675cqh)] rotate-[-9.01deg] skew-x-[15.35deg] w-[hypot(78.8675cqw,-21.1325cqh)]">
+                    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-595.18px_184.299px] mask-size-[1352px_704px] opacity-90 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                      <div className="absolute inset-[-77.83%_-49.93%]">
+                        <img alt="" className="block max-w-none size-full" src={imgEllipse8925} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute flex h-[93.074px] items-center justify-center left-[-2.17%] right-[91.51%] top-[-18.99px]" data-node-id="14:72189" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(47.8091cqw,70.1729cqh)] rotate-[-20.27deg] skew-x-[26.26deg] w-[hypot(52.1909cqw,-29.8271cqh)]">
+                    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[29.341px_18.989px] mask-size-[1352px_704px] opacity-90 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                      <div className="absolute inset-[-52.68%_-62.38%]">
+                        <img alt="" className="block max-w-none size-full" src={imgEllipse8923} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute h-[192.553px] left-[32.18%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-435.048px_123.205px] mask-size-[1352px_704px] opacity-90 right-[43.75%] top-[-123.21px]" data-node-id="14:72190" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                  <div className="absolute inset-[-51.93%_-30.73%]">
+                    <img alt="" className="block max-w-none size-full" src={imgEllipse8919} />
+                  </div>
+                </div>
+                <div className="absolute flex h-[154.854px] items-center justify-center left-[4.14%] right-[76.5%] top-[-107.98px]" data-node-id="14:72191" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(21.1325cqw,78.8675cqh)] rotate-[-9.01deg] skew-x-[15.35deg] w-[hypot(78.8675cqw,-21.1325cqh)]">
+                    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-56.018px_107.978px] mask-size-[1352px_704px] opacity-90 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                      <div className="absolute inset-[-74.59%_-47.85%]">
+                        <img alt="" className="block max-w-none size-full" src={imgEllipse8922} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute flex h-[298.954px] items-center justify-center left-[55.8%] right-[6.83%] top-[-206.3px]" data-node-id="14:72192" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(21.1325cqw,78.8675cqh)] rotate-[-9.01deg] skew-x-[15.35deg] w-[hypot(78.8675cqw,-21.1325cqh)]">
+                    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-754.374px_206.302px] mask-size-[1352px_704px] opacity-90 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                      <div className="absolute inset-[-77.27%_-49.57%]">
+                        <img alt="" className="block max-w-none size-full" src={imgEllipse8926} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute h-[165.941px] left-[-5.76%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[77.837px_-76.917px] mask-size-[1352px_704px] opacity-90 right-[85.01%] top-[76.92px]" data-node-id="14:72193" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                  <div className="absolute inset-[-90.39%_-53.49%]">
+                    <img alt="" className="block max-w-none size-full" src={imgEllipse8920} />
+                  </div>
+                </div>
+                <div className="absolute h-[172.518px] left-[18.72%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-253.028px_146.051px] mask-size-[1352px_704px] opacity-90 right-[59.72%] top-[-146.05px]" data-node-id="14:72194" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                  <div className="absolute inset-[-46.37%_-27.44%]">
+                    <img alt="" className="block max-w-none size-full" src={imgEllipse8921} />
+                  </div>
+                </div>
+                <div className="absolute h-[179.697px] left-[41.62%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-562.76px_140.86px] mask-size-[1352px_704px] opacity-90 right-[35.91%] top-[-140.86px]" data-node-id="14:72195" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                  <div className="absolute inset-[-66.78%_-39.51%]">
+                    <img alt="" className="block max-w-none size-full" src={imgEllipse8924} />
+                  </div>
+                </div>
+                <div className="absolute contents left-[-10.53%] right-[62.05%] top-[112.2px]" data-node-id="14:72196" style={{ containerType: "size" }}>
+                  <div className="absolute flex h-[154.307px] items-center justify-center left-[23.9%] right-[56.81%] top-[203.74px]" data-node-id="14:72197" style={{ containerType: "size" }}>
+                    <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
+                      <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-323.085px_-203.74px] mask-size-[1352px_704px] opacity-63 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                        <div className="absolute inset-[-115.04%_-194.42%]">
+                          <img alt="" className="block max-w-none size-full" src={imgEllipse8901} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute flex h-[130.706px] items-center justify-center left-[0.51%] right-[83.15%] top-[118.05px]" data-node-id="14:72198" style={{ containerType: "size" }}>
+                    <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
+                      <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-6.905px_-118.045px] mask-size-[1352px_704px] opacity-63 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                        <div className="absolute inset-[-135.81%_-229.52%]">
+                          <img alt="" className="block max-w-none size-full" src={imgEllipse8902} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute flex h-[152.335px] items-center justify-center left-[-10.04%] right-[91%] top-[214.95px]" data-node-id="14:72199" style={{ containerType: "size" }}>
+                    <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
+                      <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[135.763px_-214.953px] mask-size-[1352px_704px] opacity-63 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                        <div className="absolute inset-[-116.53%_-196.93%]">
+                          <img alt="" className="block max-w-none size-full" src={imgEllipse8903} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute flex h-[97.233px] items-center justify-center left-[-11.98%] right-[99.83%] top-[112.2px]" data-node-id="14:72200" style={{ containerType: "size" }}>
+                    <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
+                      <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[161.968px_-112.196px] mask-size-[1352px_704px] opacity-63 relative size-full" style={{ maskImage: `url("${imgRectangle3}")` }}>
+                        <div className="absolute inset-[-182.57%_-308.54%]">
+                          <img alt="" className="block max-w-none size-full" src={imgEllipse8904} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bg-gradient-to-t from-[#f2f3f8] from-[7.458%] h-[752px] left-[-1px] right-[-1px] to-[95.752%] to-[rgba(242,243,248,0)] top-[-1px] via-[#f7f8fb] via-[86.138%]" data-node-id="14:72202" />
+            </div>
+            <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="14:72203">
+              <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="14:72204">
+                <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="14:72205">
+                  <div className="overflow-clip relative shrink-0 size-[32px]" data-node-id="14:72206" data-name="02-video-frames 1">
+                    <div className="absolute inset-[45%_35%_15%_10%]" data-node-id="14:72207" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+                    </div>
+                    <div className="absolute bottom-[30%] left-[32.5%] right-[12.5%] top-1/4" data-node-id="14:72208" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+                    </div>
+                    <div className="absolute inset-[32.5%_20%_22.5%_22.5%]" data-node-id="14:72209" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector6} />
+                    </div>
+                    <div className="absolute inset-[33.5%_21%_23.5%_23.5%]" data-node-id="14:72210" data-name="Vector">
+                      <div className="absolute inset-[-2.91%_-2.25%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector7} />
+                      </div>
+                    </div>
+                    <div className="absolute contents inset-[32.5%_20%_22.5%_22.5%]" data-node-id="14:72211" data-name="Clip path group">
+                      <div className="absolute inset-[12.5%_15%_10%_-2.5%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[8px_6.4px] mask-size-[18.4px_14.4px]" data-node-id="14:72214" style={{ maskImage: `url("${imgGroup2}")` }} data-name="Group">
+                        <div className="absolute inset-[-24.19%_-21.43%]">
+                          <img alt="" className="block max-w-none size-full" src={imgGroup1} />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-[44.35%_36.38%_34.35%_45%]" data-node-id="14:72217" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector8} />
+                    </div>
+                    <div className="absolute inset-[8.75%_13.75%_67.25%_63.75%]" data-node-id="14:72218" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector9} />
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['TikTok_Display:Medium'] leading-[24px] not-italic relative shrink-0 text-[#1c1f23] text-[16px] tracking-[0.048px] whitespace-nowrap" data-node-id="14:72219">
+                    Video Agent
+                  </p>
+                </div>
+                <div className="bg-[rgba(255,255,255,0.6)] content-stretch flex gap-[6px] items-center px-[8px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="14:72220">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[10px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] whitespace-nowrap" data-node-id="14:72221">
+                    01 Share Feedback
+                  </p>
+                  <div className="h-[4px] relative shrink-0 w-[8px]" data-node-id="14:72222" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[10px] text-[rgba(28,30,35,0.6)] whitespace-nowrap" data-node-id="14:72223">
+                    02 Plan Changes
+                  </p>
+                  <div className="h-[4px] relative shrink-0 w-[8px]" data-node-id="14:72224" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                  <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[16px] not-italic relative shrink-0 text-[10px] text-[color:var(--主题色,#0077fa)] whitespace-nowrap" data-node-id="14:72225">
+                    03 Generate Videos
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[10px] items-center justify-center pl-[6px] relative shrink-0 w-full" data-node-id="14:72226">
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.6] not-italic overflow-hidden relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] text-ellipsis w-full whitespace-nowrap" data-node-id="14:72233">
+                  We’ve created three candidates based on your feedback: a tighter edit, a product-in-use approach, and an everyday-story approach. All three bring the opening forward, soften the product placement, relax the creator’s delivery, and end with a gentler invitation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-[1_0_0] gap-[16px] items-center min-h-px relative w-full" data-node-id="14:72234">
+            <div className="bg-white border border-[var(--主题色,#0077fa)] border-solid content-stretch drop-shadow-[3px_4px_8.3px_rgba(51,112,255,0.2)] flex flex-[1_0_0] flex-col gap-[16px] h-full items-start min-w-px pb-[12px] pt-[16px] px-[12px] relative rounded-[16px]" data-node-id="14:72235">
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="14:72236">
+                <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="14:72237">
+                  <div className="[word-break:break-word] flex flex-col font-['Inter:Semi_Bold'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--主题色,#0077fa)] whitespace-nowrap" data-node-id="14:72238">
+                    <p className="leading-[22.5px]">Candidate 1-A: A Tighter Edit</p>
+                  </div>
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] not-italic overflow-hidden relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] text-ellipsis w-full" data-node-id="14:72239">
+                  A more direct edit that keeps the original structure, trims repetitive product shots, relaxes the creator’s delivery, and softens the closing.
+                </p>
+              </div>
+              <div className="bg-[rgba(246,246,246,0.8)] content-stretch flex flex-[1_0_0] items-center justify-center min-h-[460px] overflow-clip px-[24px] relative rounded-[16px] w-full" data-node-id="14:72240" data-name="Main Video Stage (Centered Vertical 9:16 Video Player with Left Thumbnails as in IMAGE_4)">
+                <div className="aspect-[90/160] h-full relative shrink-0" data-node-id="14:72241" data-name="AB6AXuCgdE1XYXkD0t1AeUkkV4T_UunV7n7sDTosezg3lXVuPMnzL5xlvv4ecGJxTtz01l63l35n-mT26K-Qol4dGMpR7A7QOCVUGsb0JzhohzKsTZHYApzBIm_lwBViNz_xy1qHyxOhRKhFX0Q9Q6xrJz-MSNq1zH3zzsZgpMa7NytONUPwI_NGLZWupTNpl4qdZPbmhrIhjt2XEqd-yAjjvj4AVHLJWW1U1TshUKvXk_N5T-PSrTbFNy8Q">
+                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[116.28%] left-0 max-w-none top-[-8.14%] w-full" src={imgAb6AXuCgdE1XyXkD0T1AeUkkV4TUunV7N7SDTosezg3LXVuPMnzL5Xlvv4EcGJxTtz01L63L35NMT26KQol4DGMpR7A7QocvuGsb0JzhohzKsTzhyApzBImLwBViNzXy1QHyxOhRKhFx0Q9Q6XrJzMsNq1ZH3ZzsZgpMa7NytOnuPwINglzWupTNpl4QdZPbmhrIhjt2XEqdYAjjvj4Avhljww1U1TshUKvXkN5TPSrTbFNy8Q} />
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-[rgba(0,0,0,0.6)] h-[40px] left-[calc(50%-0.61px)] rounded-[9999px] top-1/2 w-[46.782px]" data-node-id="14:72242" data-name="Central Floating Play Button on Left of Video (IMAGE_4 style)">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative size-full">
+                    <div className="-translate-y-1/2 absolute bg-[rgba(255,255,255,0)] h-[40px] left-0 right-0 rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] top-1/2" data-node-id="14:72243" data-name="Central Floating Play Button on Left of Video (IMAGE_4 style):shadow" />
+                    <div className="h-[11.667px] relative shrink-0 w-[9.167px]" data-node-id="14:72244" data-name="Container">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer} />
+                    </div>
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 absolute bg-[rgba(0,0,0,0.36)] bottom-[8px] left-[calc(50%-0.5px)] rounded-[22px] w-[335px]" data-node-id="14:72246" data-name="Shot Timeline Track Section (Redesigned matching IMAGE_4)">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start px-[12px] py-[10px] relative size-full">
+                    <div className="border-0 border-[#f1f5f9] border-solid relative shrink-0 w-full" data-node-id="14:72247" data-name="Scrubber Control Header (Play/Pause, Timecode, Volume, Zoom Slider)">
+                      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                        <div className="relative shrink-0" data-node-id="14:72248" data-name="Container">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[4px] items-center relative size-full">
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72249" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72250" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg} />
+                              </div>
+                            </div>
+                            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="14:72252" data-name="Container">
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72253" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72254">
+                                  00:06
+                                </p>
+                              </div>
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72255" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72256">
+                                  /
+                                </p>
+                              </div>
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72257" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72258">
+                                  01:24
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex-[1_0_0] min-w-px relative" data-node-id="14:72259">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[2px] items-center relative size-full">
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative rounded-bl-[4px] rounded-tl-[4px]" data-node-id="14:72260" />
+                            <div className="bg-[var(--主题色,#0077fa)] flex-[1_0_0] h-[4px] min-w-px relative" data-node-id="14:72261" />
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative" data-node-id="14:72262" />
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative rounded-br-[4px] rounded-tr-[4px]" data-node-id="14:72263" />
+                            <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-white border-2 border-[var(--主题色,#0077fa)] border-solid content-stretch flex flex-col items-center justify-center left-[calc(50%-18px)] p-[2px] rounded-[9999px] size-[12px] top-1/2" data-node-id="14:72264" data-name="Background+Border">
+                              <div className="bg-[rgba(255,255,255,0)] relative rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)] shrink-0 size-[12px]" data-node-id="14:72265" data-name="Overlay+Shadow" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="relative shrink-0" data-node-id="14:72266" data-name="Container">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72267" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72268" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg1} />
+                              </div>
+                            </div>
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72270" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72271" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg2} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-[#e8ecf2] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[16px] h-full items-start min-w-px pb-[12px] pt-[16px] px-[12px] relative rounded-[16px]" data-node-id="14:72276">
+              <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-full" data-node-id="14:72277">
+                <div className="flex flex-col font-['Inter:Semi_Bold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#0f172a] text-[15px] whitespace-nowrap" data-node-id="14:72278">
+                  <p className="leading-[22.5px]">Candidate 1-B: Product in Use</p>
+                </div>
+                <p className="font-['Inter:Regular'] font-normal leading-[1.4] min-w-full overflow-hidden relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] text-ellipsis w-[min-content]" data-node-id="14:72279">
+                  A hands-on approach that introduces the cushion through use, pairs product information with application, and closes with a casual recommendation.
+                </p>
+              </div>
+              <div className="bg-[rgba(246,246,246,0.8)] content-stretch flex flex-[1_0_0] items-center justify-center min-h-[460px] px-[24px] relative rounded-[16px] w-full" data-node-id="14:72280" data-name="Main Video Stage (Centered Vertical 9:16 Video Player with Left Thumbnails as in IMAGE_4)">
+                <div className="aspect-[90/160] h-full relative shrink-0" data-node-id="14:72281" data-name="AB6AXuCgdE1XYXkD0t1AeUkkV4T_UunV7n7sDTosezg3lXVuPMnzL5xlvv4ecGJxTtz01l63l35n-mT26K-Qol4dGMpR7A7QOCVUGsb0JzhohzKsTZHYApzBIm_lwBViNz_xy1qHyxOhRKhFX0Q9Q6xrJz-MSNq1zH3zzsZgpMa7NytONUPwI_NGLZWupTNpl4qdZPbmhrIhjt2XEqd-yAjjvj4AVHLJWW1U1TshUKvXk_N5T-PSrTbFNy8Q">
+                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[116.28%] left-0 max-w-none top-[-8.14%] w-full" src={imgAb6AXuCgdE1XyXkD0T1AeUkkV4TUunV7N7SDTosezg3LXVuPMnzL5Xlvv4EcGJxTtz01L63L35NMT26KQol4DGMpR7A7QocvuGsb0JzhohzKsTzhyApzBImLwBViNzXy1QHyxOhRKhFx0Q9Q6XrJzMsNq1ZH3ZzsZgpMa7NytOnuPwINglzWupTNpl4QdZPbmhrIhjt2XEqdYAjjvj4Avhljww1U1TshUKvXkN5TPSrTbFNy8Q} />
+                  </div>
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid overflow-clip relative rounded-[inherit] size-full">
+                    <div className="absolute inset-[0_-48.56px_0_-14.31px]" data-node-id="14:72282" data-name="AB6AXuAmsIVtRzPVXMmTalM4vipFxb8uobiWPss8DtGHwNqfHpSk_rDuTfvrHFqSPhZjtxEo_JSa7S77pZWYVVKWoP9h_BA9ICEcTeukqGVQbGROvzJlmlmwVfY1_j9Jue7yCH4ewk1ieikw0W8vROHB9_SBCyPmuxL_HWMLSP50m7XZNd2--Nm-IKgwD_lHhsfyuF3itqq0SCQEL42SiZ199oH7S3YjdeE-YTZH328km2mj_88OZMlNUUzg">
+                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt="" className="absolute h-[123.94%] left-0 max-w-none top-[-11.97%] w-full" src={imgAb6AXuAmsIVtRzPvxMmTalM4VipFxb8UobiWPss8DtGHwNqfHpSkRDuTfvrHFqSPhZjtxEoJSa7S77PZwyvvkWoP9HBa9IcEcTeukqGvQbGrOvzJlmlmwVfY1J9Jue7YCh4Ewk1Ieikw0W8VRohb9SbCyPmuxLHwmlsp50M7XzNd2NmIKgwDLHhsfyuF3Itqq0Scqel42SiZ199OH7S3YjdeEYtzh328Km2Mj88OzMlNuUzg} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-[rgba(0,0,0,0.6)] h-[40px] left-[calc(50%-0.61px)] rounded-[9999px] top-1/2 w-[46.782px]" data-node-id="14:72283" data-name="Central Floating Play Button on Left of Video (IMAGE_4 style)">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative size-full">
+                    <div className="-translate-y-1/2 absolute bg-[rgba(255,255,255,0)] h-[40px] left-0 right-0 rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] top-1/2" data-node-id="14:72284" data-name="Central Floating Play Button on Left of Video (IMAGE_4 style):shadow" />
+                    <div className="h-[11.667px] relative shrink-0 w-[9.167px]" data-node-id="14:72285" data-name="Container">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer} />
+                    </div>
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 absolute bg-[rgba(0,0,0,0.36)] bottom-[8px] left-[calc(50%-0.83px)] rounded-[22px] w-[335px]" data-node-id="14:72287" data-name="Shot Timeline Track Section (Redesigned matching IMAGE_4)">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start px-[12px] py-[10px] relative size-full">
+                    <div className="border-0 border-[#f1f5f9] border-solid relative shrink-0 w-full" data-node-id="14:72288" data-name="Scrubber Control Header (Play/Pause, Timecode, Volume, Zoom Slider)">
+                      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                        <div className="relative shrink-0" data-node-id="14:72289" data-name="Container">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[4px] items-center relative size-full">
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72290" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72291" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg} />
+                              </div>
+                            </div>
+                            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="14:72293" data-name="Container">
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72294" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72295">
+                                  00:06
+                                </p>
+                              </div>
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72296" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72297">
+                                  /
+                                </p>
+                              </div>
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72298" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72299">
+                                  01:24
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex-[1_0_0] min-w-px relative" data-node-id="14:72300">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[2px] items-center relative size-full">
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative rounded-bl-[4px] rounded-tl-[4px]" data-node-id="14:72301" />
+                            <div className="bg-[var(--主题色,#0077fa)] flex-[1_0_0] h-[4px] min-w-px relative" data-node-id="14:72302" />
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative" data-node-id="14:72303" />
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative rounded-br-[4px] rounded-tr-[4px]" data-node-id="14:72304" />
+                            <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-white border-2 border-[var(--主题色,#0077fa)] border-solid content-stretch flex flex-col items-center justify-center left-[calc(50%-18px)] p-[2px] rounded-[9999px] size-[12px] top-1/2" data-node-id="14:72305" data-name="Background+Border">
+                              <div className="bg-[rgba(255,255,255,0)] relative rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)] shrink-0 size-[12px]" data-node-id="14:72306" data-name="Overlay+Shadow" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="relative shrink-0" data-node-id="14:72307" data-name="Container">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72308" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72309" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg1} />
+                              </div>
+                            </div>
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72311" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72312" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg2} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-[#e8ecf2] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[16px] h-full items-start min-w-px pb-[12px] pt-[16px] px-[12px] relative rounded-[16px]" data-node-id="14:72317">
+              <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-full" data-node-id="14:72318">
+                <div className="flex flex-col font-['Inter:Semi_Bold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#0f172a] text-[15px] whitespace-nowrap" data-node-id="14:72319">
+                  <p className="leading-[22.5px]">Candidate 1-C: An Everyday Story</p>
+                </div>
+                <p className="font-['Inter:Regular'] font-normal leading-[1.4] min-w-full overflow-hidden relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] text-ellipsis w-[min-content]" data-node-id="14:72320">
+                  A routine-led approach that places the cushion within a summer morning, uses conversational delivery, and ends with the creator heading out.
+                </p>
+              </div>
+              <div className="bg-[rgba(246,246,246,0.8)] content-stretch flex flex-[1_0_0] items-center justify-center min-h-[460px] px-[24px] relative rounded-[16px] w-full" data-node-id="14:72321" data-name="Main Video Stage (Centered Vertical 9:16 Video Player with Left Thumbnails as in IMAGE_4)">
+                <div className="aspect-[90/160] h-full relative shrink-0" data-node-id="14:72322" data-name="AB6AXuCgdE1XYXkD0t1AeUkkV4T_UunV7n7sDTosezg3lXVuPMnzL5xlvv4ecGJxTtz01l63l35n-mT26K-Qol4dGMpR7A7QOCVUGsb0JzhohzKsTZHYApzBIm_lwBViNz_xy1qHyxOhRKhFX0Q9Q6xrJz-MSNq1zH3zzsZgpMa7NytONUPwI_NGLZWupTNpl4qdZPbmhrIhjt2XEqd-yAjjvj4AVHLJWW1U1TshUKvXk_N5T-PSrTbFNy8Q">
+                  <div aria-hidden className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 pointer-events-none">
+                    <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden">
+                      <img alt="" className="absolute h-[116.28%] left-0 max-w-none top-[-8.14%] w-full" src={imgAb6AXuCgdE1XyXkD0T1AeUkkV4TUunV7N7SDTosezg3LXVuPMnzL5Xlvv4EcGJxTtz01L63L35NMT26KQol4DGMpR7A7QocvuGsb0JzhohzKsTzhyApzBImLwBViNzXy1QHyxOhRKhFx0Q9Q6XrJzMsNq1ZH3ZzsZgpMa7NytOnuPwINglzWupTNpl4QdZPbmhrIhjt2XEqdYAjjvj4Avhljww1U1TshUKvXkN5TPSrTbFNy8Q} />
+                    </div>
+                    <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden">
+                      <img alt="" className="absolute h-[100.41%] left-0 max-w-none top-[-0.2%] w-full" src={imgAb6AXuCgdE1XyXkD0T1AeUkkV4TUunV7N7SDTosezg3LXVuPMnzL5Xlvv4EcGJxTtz01L63L35NMT26KQol4DGMpR7A7QocvuGsb0JzhohzKsTzhyApzBImLwBViNzXy1QHyxOhRKhFx0Q9Q6XrJzMsNq1ZH3ZzsZgpMa7NytOnuPwINglzWupTNpl4QdZPbmhrIhjt2XEqdYAjjvj4Avhljww1U1TshUKvXkN5TPSrTbFNy8Q1} />
+                    </div>
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-[rgba(0,0,0,0.6)] h-[40px] left-[calc(50%-0.61px)] rounded-[9999px] top-1/2 w-[46.782px]" data-node-id="14:72323" data-name="Central Floating Play Button on Left of Video (IMAGE_4 style)">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative size-full">
+                    <div className="-translate-y-1/2 absolute bg-[rgba(255,255,255,0)] h-[40px] left-0 right-0 rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] top-1/2" data-node-id="14:72324" data-name="Central Floating Play Button on Left of Video (IMAGE_4 style):shadow" />
+                    <div className="h-[11.667px] relative shrink-0 w-[9.167px]" data-node-id="14:72325" data-name="Container">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer} />
+                    </div>
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 absolute bg-[rgba(0,0,0,0.36)] bottom-[8px] left-[calc(50%-0.17px)] rounded-[22px] w-[335px]" data-node-id="14:72327" data-name="Shot Timeline Track Section (Redesigned matching IMAGE_4)">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start px-[12px] py-[10px] relative size-full">
+                    <div className="border-0 border-[#f1f5f9] border-solid relative shrink-0 w-full" data-node-id="14:72328" data-name="Scrubber Control Header (Play/Pause, Timecode, Volume, Zoom Slider)">
+                      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                        <div className="relative shrink-0" data-node-id="14:72329" data-name="Container">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[4px] items-center relative size-full">
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72330" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72331" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg} />
+                              </div>
+                            </div>
+                            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="14:72333" data-name="Container">
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72334" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72335">
+                                  00:06
+                                </p>
+                              </div>
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72336" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72337">
+                                  /
+                                </p>
+                              </div>
+                              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72338" data-name="Container">
+                                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="14:72339">
+                                  01:24
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex-[1_0_0] min-w-px relative" data-node-id="14:72340">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[2px] items-center relative size-full">
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative rounded-bl-[4px] rounded-tl-[4px]" data-node-id="14:72341" />
+                            <div className="bg-[var(--主题色,#0077fa)] flex-[1_0_0] h-[4px] min-w-px relative" data-node-id="14:72342" />
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative" data-node-id="14:72343" />
+                            <div className="bg-white flex-[1_0_0] h-[4px] min-w-px relative rounded-br-[4px] rounded-tr-[4px]" data-node-id="14:72344" />
+                            <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-white border-2 border-[var(--主题色,#0077fa)] border-solid content-stretch flex flex-col items-center justify-center left-[calc(50%-18px)] p-[2px] rounded-[9999px] size-[12px] top-1/2" data-node-id="14:72345" data-name="Background+Border">
+                              <div className="bg-[rgba(255,255,255,0)] relative rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)] shrink-0 size-[12px]" data-node-id="14:72346" data-name="Overlay+Shadow" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="relative shrink-0" data-node-id="14:72347" data-name="Container">
+                          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72348" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72349" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg1} />
+                              </div>
+                            </div>
+                            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="14:72351" data-name="Button">
+                              <div className="relative shrink-0 size-[16px]" data-node-id="14:72352" data-name="SVG">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg2} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white content-stretch flex items-center justify-between relative rounded-bl-[16px] rounded-br-[16px] shrink-0 w-full" data-node-id="14:72384">
+            <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="14:72385">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] not-italic relative shrink-0 text-[12px] text-[color:var(--usage\/text\/--semi-color-text-2,rgba(28,30,35,0.6))] whitespace-nowrap" data-node-id="14:72386">
+                🥳 You can choose your favorite Candidate to export or keep refining.
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="14:72387">
+              <div className="content-stretch flex gap-[4px] items-center justify-center pl-[4px] relative rounded-[3px] shrink-0" data-node-id="14:72388" data-name="Button_Link">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[16px] not-italic relative shrink-0 text-[#0077fa] text-[12px] whitespace-nowrap" data-node-id="I14:72388;2734:43528">
+                  Back to Feedback
+                </p>
+              </div>
+              <div className="bg-[var(--usage\/fill\/--semi-color-fill-0,rgba(116,126,145,0.1))] content-stretch flex h-[32px] items-center justify-center px-[12px] py-[6px] relative rounded-[var(--radius\/medium,6px)] shrink-0" data-node-id="14:72398" data-name="Button_Light">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-[rgba(28,31,35,0.8)] whitespace-nowrap" data-node-id="I14:72398;2734:42606">
+                  Refine Candidate
+                </p>
+              </div>
+              <div className="bg-gradient-to-r content-stretch drop-shadow-[0px_4px_7px_rgba(51,112,255,0.28)] flex from-[#3370ff] gap-[8px] items-center px-[20px] py-[10px] relative rounded-[8px] shrink-0 to-[#6366f1]" data-node-id="14:72389" data-name="Button">
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="14:72390" data-name="Container">
+                  <div className="[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-center text-white whitespace-nowrap" data-node-id="14:72391">
+                    <p className="leading-[16px]">Export Video</p>
+                  </div>
+                </div>
+                <div className="relative shrink-0 size-[11.333px]" data-node-id="14:72392" data-name="Container">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer1} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Light/usage/text/--color-text-0: #1C1F23, Light/usage/text/--color-text-2: #1C1F23, Semi/usage/text/--color-text-2: #1C1E23, Semi/usage/text/--color-text-0: #1C1E23, Header/Heading 6/EN-Semi Bold: Font(family: "Inter", style: Semi Bold, size: 16, weight: 600, lineHeight: 22, letterSpacing: -2), Paragraph/small/EN-Regular: Font(family: "Inter", style: Regular, size: 12, weight: 400, lineHeight: 16, letterSpacing: 0), Semi/usage/border/--color-border: #1C1E23, Semi/usage/bg/--color-bg-0: #FFFFFF, Light/usage/link/--color-link: #0077FA, Light/usage/text/--color-text-1: #1C1F23, Paragraph/regular/EN-Semi Bold: Font(family: "Inter", style: Semi Bold, size: 14, weight: 600, lineHeight: 20, letterSpacing: 0), Semi/usage/fill/--color-fill-0: #747E91, Background/整体背景色 @color-bg-1: #FFFFFF.
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

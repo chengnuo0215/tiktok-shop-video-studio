@@ -1,0 +1,26 @@
+[
+  {
+    "screen": "home",
+    "mean_absolute_channel_difference_0_to_255": 1.33
+  },
+  {
+    "screen": "new-project",
+    "mean_absolute_channel_difference_0_to_255": 0.601
+  },
+  {
+    "screen": "feedback",
+    "mean_absolute_channel_difference_0_to_255": 2.245
+  },
+  {
+    "screen": "plan",
+    "mean_absolute_channel_difference_0_to_255": 2.153
+  },
+  {
+    "screen": "candidates",
+    "mean_absolute_channel_difference_0_to_255": 2.214
+  },
+  {
+    "screen": "preview",
+    "mean_absolute_channel_difference_0_to_255": 2.739
+  }
+]
