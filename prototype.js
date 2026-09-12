@@ -45,7 +45,7 @@ function fitPreviewContent(panel){
 function fitPlanContent(panel){
  if(!panel)return;
  const available='calc(100% - 22px)';
- const header=node('11:68725'),steps=node('11:68865');if(header)header.style.width='100%';if(steps)Object.assign(steps.style,{left:'auto',right:'0px',transform:'scale(.74)',transformOrigin:'right center'});
+ const header=node('11:68724'),headerInner=node('11:68725'),steps=node('11:68865'),intro=node('11:68747'),introText=node('11:68754'),compact=panel.getBoundingClientRect().width<520;if(header)Object.assign(header.style,{width:'calc(100% - 32px)',height:(compact?110:74)+'px'});if(headerInner)headerInner.style.width='100%';if(steps)Object.assign(steps.style,{left:'auto',right:'0px',top:(compact?36:4)+'px',transform:'none',transformOrigin:'right center'});if(intro)Object.assign(intro.style,{top:(compact?72:36)+'px',width:'100%',height:'20px'});if(introText)Object.assign(introText.style,{width:'100%',height:'20px',lineHeight:'20px',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'});const sc=panel.querySelector('.cards-scroll');if(sc&&intro){const panelRect=panel.getBoundingClientRect(),introRect=intro.getBoundingClientRect(),top=introRect.bottom-panelRect.top-panel.clientTop+16;Object.assign(sc.style,{top:top+'px',height:Math.max(120,panelRect.height-top-62)+'px'});}
  const questions=node('11:68755'),groups=[node('11:68762'),node('13:69042')],containers=[node('11:68765'),node('13:69046')];
  if(questions)questions.style.width='100%';
  groups.forEach(group=>{if(group)group.style.width=available;});
