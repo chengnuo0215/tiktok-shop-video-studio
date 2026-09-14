@@ -1,5 +1,5 @@
 {
-  "name": "figma-exact",
+  "name": "tiktok-shop-video-studio",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "High-fidelity interactive prototype for an AI-assisted video refinement workflow.",
   "devDependencies": {
     "esbuild": "^0.28.2",
     "react": "^19.3.0",

@@ -1,2 +1,67 @@
-const {chromium}=require('/Users/nnnn215/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const assert=require('node:assert/strict');
-(async()=>{const browser=await chromium.launch();const p=await browser.newPage({viewport:{width:1440,height:900}});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto('http://localhost:4190/?verify=responsive');await p.getByRole('button',{name:'Start Refining',exact:true}).click();await p.getByText(/Creating a new project is not available/).waitFor();await p.getByRole('button',{name:'Open Everyday Lip Tint',exact:true}).click();await p.getByText(/This project is not available/).waitFor();await p.getByRole('button',{name:'Open Summer Sunscreen Cushion',exact:true}).click();await p.locator('#design[data-screen="feedback"]').waitFor();await p.getByRole('button',{name:'Collapse sidebar'}).click();assert.equal(Math.round(await p.locator('[data-node-id="16:73477"]').evaluate(el=>el.getBoundingClientRect().width)),56);await p.getByRole('button',{name:'Rename project'}).first().click();await p.getByLabel('Project name').fill('Summer Campaign Cut');await p.getByRole('button',{name:'Save'}).click();await p.waitForTimeout(100);assert.equal((await p.getByRole('button',{name:'Rename project'}).first().innerText()).trim(),'Summer Campaign Cut');await p.getByRole('button',{name:'The opening doesn’t grab me',exact:true}).click();await p.getByRole('button',{name:'Let’s Plan the Changes',exact:true}).click();await p.locator('#design[data-screen="plan"]').waitFor();await p.getByRole('button',{name:'Smooth out the movement around the nose',exact:true}).click();await p.getByRole('button',{name:'Generate New Videos',exact:true}).click();await p.locator('#design[data-screen="candidates"]').waitFor();assert.equal(await p.locator('.generation-placeholder').count(),3);assert.equal(await p.getByText('Video Agent is working').isVisible(),true);await p.evaluate(()=>{const s=JSON.parse(localStorage.getItem('tiktok-figma-exact-state'));s.generationStartedAt=Date.now()-13000;localStorage.setItem('tiktok-figma-exact-state',JSON.stringify(s));});await p.reload();await p.getByRole('button',{name:'Preview candidate B',exact:true}).click();await p.locator('#design[data-screen="preview"]').waitFor();await p.getByText('2/3',{exact:true}).waitFor();await p.getByRole('button',{name:'Next candidate',exact:true}).click();await p.getByText('3/3',{exact:true}).waitFor();await p.getByRole('button',{name:'Refine in a new version',exact:true}).click();await p.locator('#design[data-screen="feedback"]').waitFor();assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('tiktok-figma-exact-state')).base),'Candidate 1-C');await p.reload();await p.locator('#design[data-screen="feedback"]').waitFor();assert.deepEqual(errors,[]);const missing=await p.evaluate(()=>[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src));assert.equal(missing.length,0);console.log(JSON.stringify({passed:true,flow:'home notices → project → collapse → rename → feedback → plan → candidates → preview → refine',stateRestored:true,missingAssets:missing,pageErrors:errors}));await browser.close();})().catch(e=>{console.error(e);process.exit(1)});
+const { chromium } = require('/Users/nnnn215/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert = require('node:assert/strict');
+
+(async () => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+
+  await page.goto('http://localhost:4190/?verify=current#home');
+  await page.evaluate(() => localStorage.clear());
+  await page.reload();
+  await page.locator('#design[data-screen="home"]').waitFor();
+
+  await page.getByRole('button', { name: 'Start Refining', exact: true }).click();
+  await page.locator('#design[data-screen="new-project"]').waitFor();
+  await page.getByRole('button', { name: 'Create', exact: true }).click();
+  await page.getByText('暂时无法创建，可以体验我们这一个案例项目').waitFor();
+  await page.getByRole('button', { name: 'Cancel', exact: true }).click();
+
+  await page.getByRole('button', { name: 'Open Everyday Lip Tint', exact: true }).click();
+  await page.getByText('暂时无法体验，请体验第一个项目').waitFor();
+  await page.getByRole('button', { name: 'Open Lightweight Sunscreen Review', exact: true }).click();
+  await page.locator('#design[data-screen="feedback"]').waitFor();
+
+  await page.getByRole('button', { name: 'Feels information-heavy', exact: true }).click();
+  await page.getByRole('button', { name: 'Let’s Plan the Changes', exact: true }).click();
+  await page.locator('.page-transition-overlay').waitFor();
+  await page.locator('#design[data-screen="plan"]').waitFor({ timeout: 5000 });
+
+  await page.getByRole('button', { name: 'Lead with the lightweight feel', exact: true }).click();
+  await page.getByRole('button', { name: 'Give the Lijiang proof more space', exact: true }).click();
+  await page.getByRole('button', { name: 'Generate New Videos', exact: true }).click();
+  await page.locator('.page-transition-overlay').waitFor();
+  await page.locator('#design[data-screen="candidates"]').waitFor({ timeout: 5000 });
+
+  await page.getByRole('button', { name: 'Select candidate B', exact: true }).click();
+  await page.getByRole('button', { name: 'View Detail for candidate B', exact: true }).click();
+  await page.locator('#design[data-screen="preview"]').waitFor();
+  await page.getByText('2/3', { exact: true }).waitFor();
+  await page.getByRole('button', { name: 'Next candidate', exact: true }).click();
+  await page.getByText('3/3', { exact: true }).waitFor();
+  await page.getByRole('button', { name: 'Refine in a new version', exact: true }).click();
+  await page.locator('#design[data-screen="feedback"]').waitFor();
+
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('tiktok-figma-exact-state')));
+  assert.equal(saved.base, 'Personal Review');
+  assert.equal(saved.currentVersion, 1);
+  assert.deepEqual(errors, []);
+
+  const missing = await page.evaluate(() =>
+    [...document.images].filter(image => !image.complete || !image.naturalWidth).map(image => image.src)
+  );
+  assert.equal(missing.length, 0);
+
+  console.log(JSON.stringify({
+    passed: true,
+    flow: 'home → create notice → feedback → plan → candidates → preview → refine',
+    stateRestored: true,
+    missingAssets: missing,
+    pageErrors: errors
+  }));
+  await browser.close();
+})().catch(error => {
+  console.error(error);
+  process.exit(1);
+});

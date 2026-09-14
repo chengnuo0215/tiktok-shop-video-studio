@@ -1,40 +1,53 @@
-# Figma 原稿还原版
+# TikTok Shop Video Studio
 
-此目录是重新搭建的网页原型，不使用上一版 figma-web-prototype 的布局、样式或文案。视觉依据为 Figma 文件 bWMuoXOkTdgvgNJ8lke4k4 / 18:81374 当前六个页面。
+一个用于演示 AI 视频改片流程的高保真网页原型。用户可以观看示例视频、按整片或分镜提交感受、确认修改计划、生成候选版本，并继续迭代或预览导出结果。
 
-启动：`python3 -m http.server 4190`，打开 http://localhost:4190 。当前会话已运行该服务。
+## 在线体验
 
-## 页面
+https://tiktok-shop-video-studio.vercel.app/#home
 
-- `#home`：首页，五张项目卡，当前稿中的首页解释文案。
-- `#new-project`：新建项目，节点更新为 25:81862。
-- `#feedback`：反馈页，当前稿中的展开/折叠状态。
-- `#plan`：确认修改计划。
-- `#candidates`：三候选，分别使用原稿各自的图片。
-- `#preview`：候选详情。
+推荐从首页的 **Lightweight Sunscreen Review** 项目开始体验完整流程。
 
-1440×900 为设计基准。桌面窗口变化时，视频预览区优先按照可用高度等比伸缩，AI 面板占据剩余宽度；侧栏保持 220px，并可折叠为 56px。低于桌面原型的最小可用宽度时保留横向滚动，避免压缩文字和操作控件。原有拼写、命名、示例日期与数量均以这次 Figma 当前稿为准。
+## 主要流程
 
-## 实现
+1. **Share Feedback**：观看视频，按 Whole Video 或各个 Shot 选择与补充反馈。
+2. **Plan Changes**：逐项选择修改方向，并编辑或删除计划内容。
+3. **Generate Videos**：查看三个候选版本，选择后进入详情、继续迭代或模拟导出。
 
-设计上下文已逐页下载保存在 source/。参考 JSX 在构建时转换为静态 HTML，样式转换为普通 CSS；浏览器不依赖 React 或 Tailwind。随后用 Figma 节点几何、字体信息校正布局，并添加原生输入和交互。不是整页截图覆盖点击区域。
+页面还包含项目版本管理、分镜跳转、视频播放控制、响应式布局、页面状态恢复，以及步骤跳转时的加载反馈。当前为交互演示原型，不包含真实 AI 生成后端。
 
-图片与 SVG 原始资产从 Figma URL 下载到 assets/。复杂装饰背景直接导出对应 Figma 背景节点。TikTok Display / TikTok Text / DingTalk JinBuTi 从已安装字体复制，Inter 和 JetBrains Mono 从其官方字体仓库获取。静态设计所需资产均可读取。
+## 页面入口
 
-修改结构后运行 `node build.cjs` 重新生成 screens/ 与 design.css。prototype.js 提供几何校正及交互；prototype.css 提供字体和新增交互状态。新生成状态未由 Figma 提供的部分保持简化，不声称也是原稿画面。
+- `#home`：项目首页
+- `#new-project`：新建项目弹窗
+- `#feedback`：反馈收集
+- `#plan`：修改计划
+- `#candidates`：候选视频
+- `#preview`：候选详情
 
-## 交互
+## 本地运行
 
-首页第一个项目可进入完整流程，其他项目和新建项目显示原型范围提示。项目卡的彩色描边与阴影只在 hover 时出现。原稿已有的侧栏图标负责折叠与展开，收起后视频和 AI 面板会自动补满释放的宽度。
+需要 Node.js 18 或更高版本。
 
-反馈页中的版本与分镜均可折叠和展开；感受标签默认不选中，选择后可再次点击取消。计划页支持跳过和恢复问题：跳过时隐藏该题选项、禁用自定义方向，并将操作改为“Cancel skip”。Shot 标签可把视频预览定位到对应片段。
+```bash
+npm install
+npm run build
+npm start
+```
 
-点击“Generate New Videos”后先进入约 12 秒的生成演示。Video Agent 会逐步展示分析、映射分镜、渲染与检查过程，下方三张候选卡显示渐变模糊的动态占位；生成结束后才展示候选视频。其余交互包括搜索、项目重命名、补充输入、候选预览与详情切换、继续修改和 localStorage 记录。未包含真实 AI 后端。
+然后打开 http://localhost:4190 。
 
-Figma 只有视频预览图片，没有可播放的视频文件。播放控件在没有上传视频时仅演示时码，导出会说明缺少视频。若需真实播放与视频导出，需要补充源视频及 A/B/C 候选视频素材。
+## 项目结构
 
-## 验收
+- `prototype.js`：页面状态、视频控制和交互逻辑
+- `prototype.css`：响应式布局与交互样式
+- `screens/`：构建生成的六个静态页面
+- `source/`：页面结构与几何数据
+- `assets/`：图标、字体、图片和示例视频
+- `build.cjs`：静态页面与样式构建脚本
+- `verify.cjs`：主要流程验证脚本
+- `vercel.json`：Vercel 部署配置
 
-`compare.html` 可逐页拖动对比 Figma 原稿与浏览器截图。reference/ 保留两组截图及像素差图。字体抗锯齿仍可能有渲染器差异，未把平均像素差换算为“还原百分比”。
+## 部署
 
-`node verify.cjs` 验证：首页 → 创建校验 → 反馈 → 计划 → 候选 → B/C 详情 → 继续修改；刷新恢复；页面错误与图片缺失检查。测试使用本机 bundled Playwright 路径，跨机器运行需要修改 require 路径。
+项目已配置 Vercel。连接 GitHub 仓库后，可使用默认构建命令直接部署。

@@ -1,0 +1,7 @@
+TikTok Shop Video Studio 原型
+
+在线体验地址：
+https://tiktok-shop-video-studio.vercel.app/#home
+
+GitHub 项目地址：
+https://github.com/chengnuo0215/tiktok-shop-video-studio
