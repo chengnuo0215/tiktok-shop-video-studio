@@ -33,6 +33,15 @@ const assert = require('node:assert/strict');
   await page.getByRole('button', { name: 'Generate New Videos', exact: true }).click();
   await page.locator('.page-transition-overlay').waitFor();
   await page.locator('#design[data-screen="candidates"]').waitFor({ timeout: 5000 });
+  await page.locator('.generation-agent').waitFor();
+  assert.equal(await page.locator('.generation-placeholder').count(), 3);
+  await page.getByRole('button', { name: 'Stop Thinking', exact: true }).click();
+  await page.getByRole('button', { name: 'Select candidate B', exact: true }).waitFor();
+
+  await page.getByRole('button', { name: 'Expand sidebar', exact: true }).click();
+  await page.getByRole('button', { name: 'Collapse sidebar', exact: true }).waitFor();
+  await page.getByRole('button', { name: 'Collapse sidebar', exact: true }).click();
+  await page.getByRole('button', { name: 'Expand sidebar', exact: true }).waitFor();
 
   await page.getByRole('button', { name: 'Select candidate B', exact: true }).click();
   await page.getByRole('button', { name: 'View Detail for candidate B', exact: true }).click();
