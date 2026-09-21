@@ -82,13 +82,22 @@ const assert = require('node:assert/strict');
     active: card.classList.contains('active-version'),
     border: getComputedStyle(card).borderColor,
     shadow: getComputedStyle(card).boxShadow,
-    dot: getComputedStyle(card.querySelector('[data-name="Ellipse"]')).backgroundColor
+    dot: getComputedStyle(card.querySelector('[data-name="Ellipse"]')).backgroundColor,
+    stripe: getComputedStyle(card.firstElementChild).backgroundColor,
+    stripeWidth: card.firstElementChild.getBoundingClientRect().width,
+    stripeHeight: card.firstElementChild.getBoundingClientRect().height,
+    cardHeight: card.getBoundingClientRect().height
   })));
   assert.deepEqual(versionStates.map(state => state.active), [false, false, true]);
   assert.equal(versionStates[0].dot, 'rgb(182, 187, 195)');
   assert.equal(versionStates[1].dot, 'rgb(182, 187, 195)');
   assert.equal(versionStates[2].dot, 'rgb(0, 119, 250)');
   assert.equal(versionStates[2].shadow, 'none');
+  assert.equal(versionStates[0].stripe, 'rgba(0, 0, 0, 0)');
+  assert.equal(versionStates[1].stripe, 'rgba(0, 0, 0, 0)');
+  assert.equal(versionStates[2].stripe, 'rgb(0, 119, 250)');
+  assert.equal(versionStates[2].stripeWidth, 4);
+  assert.equal(versionStates[2].stripeHeight, versionStates[2].cardHeight - 4);
   assert.deepEqual(errors, []);
 
   const missing = await page.evaluate(() =>
