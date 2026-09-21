@@ -61,6 +61,34 @@ const assert = require('node:assert/strict');
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('tiktok-figma-exact-state')));
   assert.equal(saved.base, 'Personal Review');
   assert.equal(saved.currentVersion, 1);
+
+  await page.evaluate(() => {
+    const key = 'tiktok-figma-exact-state';
+    const saved = JSON.parse(localStorage.getItem(key));
+    saved.versions = [
+      { base: 'Source Video', generated: true },
+      { base: 'Personal Review', generated: true },
+      { base: 'Source Video', generated: false }
+    ];
+    saved.currentVersion = 2;
+    saved.selected = null;
+    saved.versionOpen = [false, false, true];
+    localStorage.setItem(key, JSON.stringify(saved));
+    location.hash = 'feedback';
+    location.reload();
+  });
+  await page.locator('#design[data-screen="feedback"]').waitFor();
+  const versionStates = await page.locator('[data-node-id="16:73482"],[data-node-id="16:73516"],[data-node-id="16:73527"]').evaluateAll(cards => cards.map(card => ({
+    active: card.classList.contains('active-version'),
+    border: getComputedStyle(card).borderColor,
+    shadow: getComputedStyle(card).boxShadow,
+    dot: getComputedStyle(card.querySelector('[data-name="Ellipse"]')).backgroundColor
+  })));
+  assert.deepEqual(versionStates.map(state => state.active), [false, false, true]);
+  assert.equal(versionStates[0].dot, 'rgb(182, 187, 195)');
+  assert.equal(versionStates[1].dot, 'rgb(182, 187, 195)');
+  assert.equal(versionStates[2].dot, 'rgb(0, 119, 250)');
+  assert.equal(versionStates[2].shadow, 'none');
   assert.deepEqual(errors, []);
 
   const missing = await page.evaluate(() =>
